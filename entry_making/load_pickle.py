@@ -3,14 +3,13 @@
 Created on Wed Sep  2 02:38:44 2015
 
 @author: misha
-
-PRIMER KAKO IZVLACITI ODREDNICE IZ PICKLE-A
 """
 
 import pywikibot
 import pickle
 from sinonimi_reader import *
 
+# if we need to ignore certain entries we can use this set
 ignore = set(['импресиван', 'мезетити', 'навала', 'хеј', 'да', 'а', 'врло'])
 exist = set([])
 
@@ -26,7 +25,7 @@ def main(*argv):
     for i, title in enumerate(synonyms):
         fin = i/float(len(synonyms))
         if i % 100 == 0:
-            print('Finished %0.4f' % (fin))
+            print('Finished %0.2f' % (fin))
         if title not in ignore:
             page = pywikibot.Page(site, title)
             if page.exists() and 'Iglbot' not in page.contributors():

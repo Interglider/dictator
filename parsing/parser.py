@@ -10,7 +10,7 @@ Created on Thu Apr 16 15:09:09 2015
 """
 from collections import Counter, OrderedDict
 from bs4 import BeautifulSoup, NavigableString
-from sr_lat2cyr import *
+from sr_lat2cyr2lat import *
 import re, json
 
 #SOURCE = 'short_recnik.html'
