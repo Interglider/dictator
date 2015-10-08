@@ -8,3 +8,5 @@ Work in progress.
 
 Explanation on how the software works can be found here:
 http://interglider.org/Dictator
+
+License:	Affero General Public License v3.0
